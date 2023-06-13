@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 280px;
+    margin: auto;
+    outline: 2px solid black;
+    font-family: calibri;
+    background-color: white;
+    height: 100vh;
+}
+
+.hero{
+    height: 30vh;
+    background-color: goldenrod;
+    position: relative;
+}
+
+.hero::before,
+.hero::after{
+    content: "";
+    position: absolute;
+    border: 1px solid white;
+}
+
+.hero::before{
+    bottom: 10px;
+    top: 20px;
+    right: 20px;
+}
+
+.hero::after{
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+}
+
+
+.hero__title,
+.hero__text
+{
+    color: white;
+    padding-inline: 10px 20px;
+}
+
+.hero__title{
+    font-size: 2.5rem;
+    padding-block-start: 20px;
+}
+
+.hero__text{
+    margin-block-end: 20px;
+}
+
+.hero__call-to-action{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+    margin-inline-start: 10px;
+    border-radius: 5px;
+}
